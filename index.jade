@@ -23,14 +23,28 @@ head
   link(rel="stylesheet", href="styles/app.css")
 
   link(rel="icon", type="image/x-icon", href="favicon.ico")
-    
+
   //if lt IE 9
     script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
 
   body
+    section#header.center
+      ul
+        li
+          h4
+            a(href="/join") Join
+        li
+          h4
+            a(href="/ideas") Ideas
+        li
+          h4
+            a(href="/code") Code
     .container
       .sixteen.columns.center
         h1.half-bottom(style="margin-top: 60px") Homework is broken.
-        h4 And we can help.
+        h3.add-bottom Think you can help?
+
+        img.no-bottom(src="logo-medium.png", alt="H-Works Logo")
+        h1 H-Works
 
       include footer

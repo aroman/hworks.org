@@ -1,0 +1,54 @@
+@blue: #3771C8;
+
+body {
+	background-image: url("pattern.png");
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+#header {
+	background: black;
+	height: 40px;
+	min-height: 40px;
+	color: white;
+	border-bottom: solid 3px @blue;
+	padding: 10px 0px 0px 5px;
+	margin-bottom: -5px;
+
+	a {
+		color: white;
+		text-decoration: none;
+		@fade-time: 0.2s;
+		-o-transition: @fade-time;
+		-ms-transition: @fade-time;
+		-moz-transition: @fade-time;
+		-webkit-transition: @fade-time;
+		transition: @fade-time;
+
+		&:hover {
+			color: @blue;
+		}
+	}
+
+	ul, li {
+		display: inline-block;
+	}
+
+	li {
+		margin-left: 20px;
+	}
+}
+
+#footer {
+	margin-top: 50px;
+}
+
+.center {
+	text-align: center;
+}
