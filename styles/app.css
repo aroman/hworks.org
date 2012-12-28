@@ -13,7 +13,7 @@ p {
 h1 {
   font-weight: bold;
 }
-#header {
+#navbar {
   background: black;
   height: 40px;
   min-height: 40px;
@@ -21,8 +21,9 @@ h1 {
   border-bottom: solid 3px #3771c8;
   padding: 10px 0px 0px 5px;
   margin-bottom: -5px;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px rgba(82, 168, 236, 0.8);
 }
-#header a {
+#navbar a {
   color: white;
   text-decoration: none;
   -o-transition: 0.2s;
@@ -31,19 +32,42 @@ h1 {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-#header a:hover {
+#navbar a:hover {
   color: #3771c8;
 }
-#header ul,
-#header li {
+#navbar ul,
+#navbar li {
   display: inline-block;
 }
-#header li {
+#navbar li {
   margin-left: 20px;
 }
 #footer {
   margin-top: 50px;
 }
+#navbar-brand {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+@media only screen and (max-width: 480px) {
+  #navbar-brand {
+    display: none !important;
+  }
+}
+.tile {
+  text-align: center;
+}
+.tile p {
+  max-width: 60%;
+  margin-left: 20%;
+}
 .center {
   text-align: center;
+}
+.pull-left {
+  text-align: left;
+}
+.pull-right {
+  text-align: right;
 }

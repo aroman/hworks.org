@@ -1,0 +1,50 @@
+!!! 5
+
+//if lt IE 7
+  html.ie.ie6
+//if IE 7
+  html.ie.ie7
+//if IE 8
+  html.ie.ie8
+//if (gte IE 9)|!(IE)]
+  html
+
+head
+  meta(charset="utf-8")
+  title
+    block title
+      | H-Works
+  meta(name="description", content="Let's make homework work for us.")
+  meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+
+  link(rel='stylesheet', type="text/css", href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700')
+
+  link(rel="stylesheet", href="styles/base.css")
+  link(rel="stylesheet", href="styles/skeleton.css")
+  link(rel="stylesheet", href="styles/layout.css")
+  link(rel="stylesheet", href="styles/app.css")
+
+  link(rel="icon", type="image/x-icon", href="favicon.ico")
+
+  //if lt IE 9
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+  block route
+
+  body
+    section#navbar.center
+      h4#navbar-brand.hidden-mobile
+        a(href="index.html") H-Works
+      li
+        h4
+          a(href="ideas.html") Ideas
+      li
+        h4
+          a(href="code.html") Code
+      li
+        h4
+          a(href="get_involved.html") Get Involved
+    .container
+      block content
+
+      include footer
