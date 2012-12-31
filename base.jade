@@ -33,17 +33,22 @@ head
 
   body
     section#navbar.center
-      h4#navbar-brand.hidden-mobile
-        a(href="index.html") HWorks
-      li
-        h4
-          a(href="ideas.html") Ideas
-      li
-        h4
-          a(href="code.html") Code
-      li
-        h4
-          a(href="get_involved.html") Get Involved
+      ul
+        li#navbar-brand
+          h4
+            a(href="index.html") HWorks
+        li
+          h4
+            a(href="ideas.html") Ideas
+        li
+          h4
+            a(href="get-involved.html") Get Involved
+        li
+          h4
+            a(href="code.html") Projects
+        li#navbar-about
+          h4
+            a(href="about.html") About
     .container
       block content
 

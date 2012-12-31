@@ -9,6 +9,7 @@ h5,
 h6,
 p {
   font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
 }
 h1 {
   font-weight: bold;
@@ -39,6 +40,11 @@ h1 {
 #navbar li {
   display: inline-block;
 }
+@media only screen and (max-width: 480px) {
+  #navbar ul li:nth-child(2) {
+    margin-left: 0px;
+  }
+}
 #navbar li {
   margin-left: 20px;
 }
@@ -48,11 +54,24 @@ h1 {
 #navbar-brand {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 15px;
+  margin-left: 0px !important;
 }
 @media only screen and (max-width: 480px) {
   #navbar-brand {
     display: none !important;
+  }
+}
+#navbar-about {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+@media only screen and (max-width: 480px) {
+  #navbar-about {
+    position: relative;
+    top: auto;
+    right: auto;
   }
 }
 .tile {
