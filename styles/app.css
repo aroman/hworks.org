@@ -18,8 +18,15 @@ h1 {
   text-align: center;
 }
 .tile p {
+  font-size: 15px;
   max-width: 60%;
   margin-left: 20%;
+}
+@media only screen and (max-width: 767px) {
+  .tile p {
+    max-width: 94%;
+    margin-left: 3%;
+  }
 }
 .center {
   text-align: center;
