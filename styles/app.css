@@ -24,6 +24,32 @@ h1 {
 .center {
   text-align: center;
 }
+.mission-statement {
+  padding-top: 20px;
+  line-height: 150%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 20px;
+}
+@media only screen and (min-width: 960px) {
+  .mission-statement br.magic {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mission-statement {
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+}
+h2.call-to-action > a {
+  color: #3771c8;
+  text-decoration: none;
+}
+h2.call-to-action > a:hover {
+  color: #214478;
+  text-decoration: underline;
+}
 .project-spread {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -48,11 +74,15 @@ h1 {
 #navbar a {
   color: white;
   text-decoration: none;
-  -o-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+}
+@media only screen (min-width: 480px) {
+  #navbar a {
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
 }
 #navbar a:hover {
   color: #3771c8;
@@ -68,6 +98,8 @@ h1 {
   #navbar ul li {
     margin-left: 10px;
   }
+}
+@media only screen and (max-width: 360px) {
   #navbar ul li h4 {
     font-size: 17px;
   }

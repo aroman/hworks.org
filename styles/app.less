@@ -26,6 +26,35 @@ h1 {
 	text-align: center;
 }
 
+.mission-statement {
+	padding-top: 20px;
+	line-height: 150%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 20px;
+
+	@media only screen and (min-width: 960px) {
+		br.magic {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		margin-left: -10%;
+		margin-right: -10%;
+	}
+}
+
+h2.call-to-action > a {
+	color: @blue;
+	text-decoration: none;
+
+	&:hover {
+		color: darken(@blue, 20%);
+		text-decoration: underline;
+	}
+}
+
 .project-spread {
 
 	margin-top: 15px;
@@ -55,12 +84,15 @@ h1 {
 	a {
 		color: white;
 		text-decoration: none;
-		@fade-time: 0.2s;
-		-o-transition: @fade-time;
-		-ms-transition: @fade-time;
-		-moz-transition: @fade-time;
-		-webkit-transition: @fade-time;
-		transition: @fade-time;
+
+		@media only screen (min-width: 480px) {
+			@fade-time: 0.2s;
+			-o-transition: @fade-time;
+			-ms-transition: @fade-time;
+			-moz-transition: @fade-time;
+			-webkit-transition: @fade-time;
+			transition: @fade-time;
+		}
 
 		&:hover {
 			color: @blue;
@@ -80,9 +112,12 @@ h1 {
 	   ul li {
 	   		margin-left: 10px;
 	   }
-	   ul li h4 {
-	   		font-size: 17px;
-	   }
+	}
+
+	@media only screen and (max-width: 360px) {
+		ul li h4 {
+				font-size: 17px;
+		}
 	}
 
 	li {
