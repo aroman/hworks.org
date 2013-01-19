@@ -8,7 +8,7 @@ Note that the processed HTML files have to be in the project root because that's
 
 ## License
 
-Copyright (c) 2013 &lt;Avi Romanoff&gt;
+Copyright (c) 2013 Avi Romanoff &lt;aviromanoff@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
