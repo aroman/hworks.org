@@ -12,29 +12,50 @@ block route
 block content
   .sixteen.columns.center.add-bottom
     h1.half-bottom(style="margin-top: 60px") Sharing ideas &amp; sharing code
-    h3 Open-source or not, we'd love to see what you've got!
-
-  .sixteen.columns.tile(style="margin-bottom:-10px")
-    img(src="add.svg", alt="", width=80, height=80)
-    h3 Your project here!
-    p(style="font-size: 17px")
-      | Built a tool that helps with their homework? Share it! 
-      a(href="mailto:howdy@hworks.org") Tell us
-      |  what you've built 
-      | and we'll feature it up here. Good ideas love company.
+    h4 Everyone benefits when we pool our ideas and solutions &mdash; open-source or not.
 
   .sixteen.columns.project-spread
     .title-line.half-bottom
       h3(style="display:inline") Keeba
       h4
-        a(href="http://keeba.jbha.org") keeba.jbha.org
+        a(href="http://keeba.jbha.org") Visit
+        |  | 
+        a(href="http://github.com/aroman/keeba") GitHub
+
     p
       | Started as the personal project of a high-school sophomore, Keeba grew to be a fully-featured
-      | homework management webapp that was sponsored and adopted by his school.
-    img(src="keeba-screenshot.png", width=150, height=123, alt="").half-bottom
-    h4
-      em Testimonials, expanded info, and screenshots go here.
-    br
-    div(style="margin-top:-15px")
-      h4
-        a(href="http://github.com") GitHub
+      | homework management web app that was sponsored and adopted by his school.
+      br
+      br
+      | By integrating with 
+      | the school's existing homework portal (through a web-scraping backend), Keeba enables students
+      | to interact with their homework directly. Rather than a simple listing of teacher bulletons, 
+      | students can mark assignments as done, move around personal due dates to suit their schedule
+      | and track their own courses and tasks which are not part of the school's official website.
+      | This functionality through a intuitive, modern, stream-lined interface using
+      | the modern web technology to keep students in-sync and on top of their work wherever they are.
+    img(src="keeba-screenshot.png", alt="keeba-screenshot").half-bottom
+    h4 Testimonials
+    blockquote
+      p
+        | "Keeba is great. I absolutely love it. So much simpler and easier to use than the school's
+        | homework website. I love how I can create my own assignments when teachers neglect to use 
+        | the website."
+      small &mdash; Barrack Academy 11th grader
+    blockquote
+      p
+        | "THIS WEBSITE IS AWESOME!!! I JUST MADE AN ACCOUNT AND I CAN'T WAIT TO USE IT NEXT YEAR!!! 
+        | THANK YOU SO MUCH!!! THE PLANNER THEY GIVE CAN NOT EVEN COMPARE TO THIS AWESOME WEBSITE!!!!"
+      small &mdash; Barrack Academy 6th grader (emphasis his)
+    hr(style="margin-top:-15px")
+
+  .sixteen.columns.tile
+    h2 Your project here!
+    img(src="lightbulb.svg", alt="", width=100, height=100)
+    p(style="font-size: 22px; line-height: 1.5")
+      | Built something that helps students stay sane? Share it! 
+      a(href="mailto:howdy@hworks.org") Tell us
+      |  what you've built 
+      | and we'll feature it up here.
+      br
+      strong Good ideas love company.
