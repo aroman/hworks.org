@@ -70,6 +70,13 @@ h2.call-to-action > a {
 			lighten(saturate(@blue, 20%), 0%), 
 			darken(saturate(@blue, 40%), 10%),
 		);
+		&:active {
+			background-image: -webkit-linear-gradient(
+				top,
+				darken(desaturate(@blue, 10%), 20%), 
+				darken(desaturate(@blue, 10%), 20%),
+			);
+		}
 	}
 }
 
