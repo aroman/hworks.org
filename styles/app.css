@@ -62,6 +62,7 @@ h2.call-to-action > a:hover {
   background-image: -webkit-linear-gradient(top, #1e6ce2, #0352c9);
 }
 h2.call-to-action > a:hover:active {
+  box-shadow: 0px 2px 12px #00037f;
   background-image: -webkit-linear-gradient(top, #294570, #294570);
 }
 .project-spread {
